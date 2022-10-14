@@ -1,0 +1,37 @@
+// importing the font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+// colors
+$background: #13231e;
+$white: rgb(244, 250, 239);
+$whiteish: rgb(192, 245, 228);
+$black: #212224;
+$green: #089a54;
+$gray: #18392B;
+
+// fonts
+$font: "Roboto";
+$mega-mega-large: 6.4rem;
+$mega-large: 3.4rem;
+$extra-large: 2.8rem;
+$large: 2.4rem;
+$high-mid: 2rem;
+$mid: 1.6rem;
+$low-mid: 1.4rem;
+$high-small: 1.2rem;
+$small: 1rem;
+
+// spacing
+//    brakepoints
+$mobile-breakpoint: 45rem;
+$tablet-breakpoint: 78rem;
+//    margin and padding
+$extra-small-space: 0.8rem;
+$small-space: 1.2rem;
+$small-medium-space: 1.6rem;
+$medium-space: 2rem;
+$small-large-space: 2.4rem;
+$large-space: 2.8rem;
+$extra-large-space: 3.2rem;
+$mega-space: 4.2rem;

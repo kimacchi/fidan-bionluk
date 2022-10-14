@@ -1,0 +1,49 @@
+.navbar_container{
+    height: 70px;
+    width: 100%;
+    background-color: #13231e6e;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    img{
+        height: 38px;
+        margin-bottom: $medium-space;
+        margin-left: $medium-space;
+    }
+    .navbar_link_aligner{
+        a{
+            margin-left: $large-space*1.5;
+            margin-right: $large-space*1.5;
+        }
+    }
+    .navbar_dashboard_button{
+        margin-right: $medium-space;
+        font-size: $mid;
+    }
+}
+.aside_wrapper{
+    height: 100vh;
+    .navbar_aside{
+        z-index: 1;
+        position: absolute;
+        top:0;
+        height: 100vh;
+        background-color: $gray;
+        display: flex;
+        flex-direction: column;
+        .navbar_link_container{
+            .navbar_link_aligner{
+                display: flex;
+                flex-direction: column;
+                gap: $large-space;
+                margin-top: $large-space;
+                font-size: $large;
+                color: $white;
+            }
+        }
+    }
+}

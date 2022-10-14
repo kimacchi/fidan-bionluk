@@ -1,0 +1,34 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    color: $white;
+    font-family: $font, Arial, sans-serif;
+    background: $background;
+    font-size: $high-mid;
+    line-height: 1.6;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    cursor: default;
+  }
+
+  a{
+    all: unset;
+    cursor: pointer;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
