@@ -3,8 +3,6 @@ import {TiMessages} from "react-icons/ti"
 import { IconContext } from 'react-icons';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
 
 const Desktop = () => {
   return(

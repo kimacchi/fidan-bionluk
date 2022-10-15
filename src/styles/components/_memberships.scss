@@ -20,10 +20,13 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            padding: 0rem 4rem 2rem 4rem;
+            border-radius: 1rem;
             .card_head{
                 display: flex;
                 justify-content: space-between;
                 .card_head_info{
+                    padding-top: 2rem;
                     h1{
                         padding: 0;
                         margin: 0;
@@ -40,7 +43,7 @@
                     // margin: 0 auto;
                     padding-top: 15px;
                     position: relative; 
-                    background: hotpink;
+                    background: $green;
                     color: white;
                     font-size: 11px;
                     letter-spacing: 0.2em;
@@ -72,7 +75,6 @@
                 margin: 0;
                 list-style: none;
                 height: 50%;
-                gap: 10px;
                 li{
                     display: flex;
                     align-items: center;
@@ -85,7 +87,70 @@
                 }
             }
             .buy_button{
+                height: 4rem;
+                font-size: $high-mid;
+                font-family: $font;
+                background-color: $green;
+            }
+            .buy_button:hover{
+                background-color: darken($green, 5);
+            }
+        }
+    }
+}
 
+@media only screen and (max-width:1420px){
+    .memberships_container{
+        .offer_stack{
+            .card{
+                width: 300px;
+                height: 500px;
+                padding: 0rem 1rem 1rem 1rem;
+                .card_head{
+                    .flag{
+                        width: 50px;
+                    }
+                    .flag:after{
+                        border-left: 25px solid transparent;
+                        border-right: 25px solid transparent;
+                    }
+                }
+                ul{
+                    li{
+                        p{
+                            font-size: $high-mid;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1100px){
+    .memberships_container{
+        .offer_stack{
+            flex-direction: column;
+            gap: 2rem;
+            .card{
+                width: 300px;
+                height: 500px;
+                padding: 0rem 1rem 1rem 1rem;
+                .card_head{
+                    .flag{
+                        width: 50px;
+                    }
+                    .flag:after{
+                        border-left: 25px solid transparent;
+                        border-right: 25px solid transparent;
+                    }
+                }
+                ul{
+                    li{
+                        p{
+                            font-size: $high-mid;
+                        }
+                    }
+                }
             }
         }
     }

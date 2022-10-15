@@ -1,0 +1,14 @@
+.faq_container{
+    width: 85%;
+    .faq_questions{
+        .faq_question{
+            h1{
+                
+            }
+            p{
+                padding-left: $mega-mega-large;
+            }
+            margin-bottom: $mega-mega-large/1.7;
+        }
+    }
+}

@@ -28,6 +28,18 @@ const Memberships = () => {
                         <AiFillStar />
                         <p>Lorem ipsum dolor sit amet.</p>
                     </li>
+                    <li>
+                        <AiFillStar />
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <AiFillStar />
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li>
+                        <AiFillStar />
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
                 </ul>
                 <Button variant="contained" className='buy_button'>Buy Now</Button>
             </div>
