@@ -6,6 +6,8 @@ import WhatWeOffer from '../components/WhatWeOffer'
 import Memberships from '../components/Memberships'
 import Quotes from '../components/Quotes'
 import Faq from '../components/Faq'
+import Footer from '../components/Footer'
+import {motion} from "framer-motion";
 
 const Main = () => {
   return (
@@ -13,10 +15,11 @@ const Main = () => {
       <Navbar />
       <FirstInfoSection />
       <SecondInfoSection />
-      <WhatWeOffer />
-      <Memberships />
-      <Quotes />
-      <Faq />
+      <WhatWeOffer />      
+      <Memberships />      
+      <Quotes />      
+      <Faq />      
+      <Footer />
     </div>
   )
 }

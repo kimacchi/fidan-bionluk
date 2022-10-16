@@ -3,10 +3,17 @@ import {TiMessages} from "react-icons/ti"
 import { IconContext } from 'react-icons';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
+import { motion } from 'framer-motion';
 
 const Desktop = () => {
   return(
-    <div className="what_we_offer_wrapper">
+    <motion.div 
+      className="what_we_offer_wrapper" id="features"
+      initial={{opacity: 0, y: -190}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{duration: 0.7}}
+      viewport={{once:true}}  
+    >
       <h1>What do we offer ?</h1>
       <div className="what_we_offer_card_container">
           {/* React icons kütüphanesindeki herhangi bir icon kullanılabilir. */}
@@ -58,12 +65,18 @@ const Desktop = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis magna ut enim mollis pharetra. Ut in congue justo.</p>
           </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 const Mobile = () => {
   return (
-    <div className="what_we_offer_wrapper">
+    <motion.div 
+      className="what_we_offer_wrapper" id="features"
+      initial={{opacity: 0, y: -190}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{duration: 0.7}}
+      viewport={{once:true}}  
+    >
       <h1>What Do We Offer?</h1>
       <Slide cssClass="something">
         <div className="what_we_offer_card_mobile">
@@ -114,7 +127,7 @@ const Mobile = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis magna ut enim mollis pharetra. Ut in congue justo.</p>
         </div>
       </Slide>
-    </div>
+    </motion.div>
   )
 }
 

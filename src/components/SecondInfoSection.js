@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react'
+import { motion } from 'framer-motion';
 
 const SecondInfoSection = () => {
 
@@ -15,8 +16,14 @@ const SecondInfoSection = () => {
       }
   })
   return (
-    <div className="second_info_wrapper">
-        <div className='second_info_first_section'>
+    <div className="second_info_wrapper" id="about">
+        <motion.div 
+            className='second_info_first_section'
+            initial={{opacity: 0, y: -190}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.7}}
+            viewport={{once:true}}
+        >
             <div className="second_info_text">
                 <h1>Lorem ipsum <span className='green'>dolor</span> sit amet</h1>
                 <p>
@@ -24,9 +31,22 @@ const SecondInfoSection = () => {
                 </p>
             </div>
             <img src="https://picsum.photos/300" alt="info_image" />
-        </div>
-        <h1>Lorem ipsum <span className="green">dolor sit</span> amet </h1>
-        <div className="second_info_section">
+        </motion.div>
+        <motion.h1
+            initial={{opacity: 0, y: -190}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.7}}
+            viewport={{once:true}}
+        >
+            Lorem ipsum <span className="green">dolor sit</span> amet
+        </motion.h1>
+        <motion.div 
+            className="second_info_section"
+            initial={{opacity: 0, y: -190}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.7}}
+            viewport={{once:true}}
+        >
             <div className='second_info_text'>
                 <h1>Lorem <span className='green'>Ipsum</span></h1>
                 <p>
@@ -44,9 +64,15 @@ const SecondInfoSection = () => {
                 </p>
             </div>
             <img src="https://picsum.photos/300" alt="info_image" />
-        </div>
+        </motion.div>
         
-        <div className={`${width > 450 ? "second_info_section" : "second_info_section reversed"}`}>
+        <motion.div 
+            className={`${width > 450 ? "second_info_section" : "second_info_section reversed"}`}
+            initial={{opacity: 0, y: -190}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.7}}
+            viewport={{once:true}}
+        >
             <img src="https://picsum.photos/300" alt="info_image" />
             <div className='second_info_text'>
                 <h1>Lorem <span className='green'>Ipsum</span></h1>
@@ -64,8 +90,15 @@ const SecondInfoSection = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis magna ut enim mollis pharetra. Ut in congue justo.
                 </p>
             </div>
-        </div>
-        <div className="second_info_section">
+        </motion.div>
+
+        <motion.div 
+            className="second_info_section"
+            initial={{opacity: 0, y: -190}}
+            whileInView={{opacity: 1, y: 0}}
+            transition={{duration: 0.7}}
+            viewport={{once:true}}
+        >
             <div className='second_info_text'>
                 <h1>Lorem <span className='green'>Ipsum</span></h1>
                 <p>
@@ -83,7 +116,7 @@ const SecondInfoSection = () => {
                 </p>
             </div>
             <img src="https://picsum.photos/300" alt="info_image" />
-        </div>
+        </motion.div>
     </div>
   )
 }

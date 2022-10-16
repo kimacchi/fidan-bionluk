@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GoQuote } from "react-icons/go"
 import { IconContext } from 'react-icons';
-
+import { motion } from 'framer-motion'
 
 const Quotes = () => {
     const settings ={
@@ -32,7 +32,13 @@ const Quotes = () => {
         ]
     }
   return (
-    <div className="quotes_wrapper">
+    <motion.div 
+        className="quotes_wrapper" id="testimonials"
+        initial={{opacity: 0, y: -190}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.7}}
+        viewport={{once:true}}
+    >
         <h1>What Others Say</h1>
         <Slider {...settings} className="quotes_slider">
             <div className="quote">
@@ -108,7 +114,7 @@ const Quotes = () => {
                 </div>
             </div>
         </Slider>
-    </div>
+    </motion.div>
   )
 }
 

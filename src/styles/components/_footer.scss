@@ -1,0 +1,92 @@
+.footer_container{
+    width: 100%;
+    background-color: $black;
+    margin-top: $mega-mega-large*2;
+    .footer_first{
+        display: flex;
+        // flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 50vh;
+        border-bottom: 2px solid $background;
+        img{
+            height: 5rem;
+        }
+        .footer_navigation_stack{
+            p{
+                padding: 0;
+                margin: 0;
+            }
+            .footer_navigation_link_cluster{
+                display: flex;
+                .footer_navigation_link_cluster__part{
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 3rem;
+                    a{
+                        font-size: $low-mid;
+                    }
+                }
+            }
+        }
+        .footer_reach{
+            .footer_contact{
+                p{
+                    margin: 0;
+                    font-size: $mid;
+                }
+            }
+            .footer_social{
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                gap: 1rem;
+                p{
+                    margin: 0;
+                    padding: 0;
+                    font-size: $mid;
+                }
+                a{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .footer_second{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        align-items: center;
+        .footer_terms{
+            a{
+                margin-left: 5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint){
+    .footer_container{
+        .footer_first{
+            flex-direction: column;
+        }   
+        .footer_second{
+            flex-direction: column-reverse;
+            padding: 1rem;
+            padding-left: 0.3rem;
+            padding-right: 0.3rem;
+            .footer_terms{
+                margin-bottom: 2rem;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    font-size: $mid;
+                    margin-left: 0rem;
+                }
+            }
+        }
+    }
+}

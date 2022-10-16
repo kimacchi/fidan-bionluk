@@ -78,19 +78,19 @@ const Navbar = () => {
       {
         width > 750 ?
           <div className='navbar_link_aligner'>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Features</a>
-            <a href="#">Memberships</a>
-            <a href="#">Testimonials</a>
-            <a href="#">FAQ</a>
+            <a href="/#">Home</a>
+            <a href="/#about">About</a>
+            <a href="/#features">Features</a>
+            <a href="/#memberships">Memberships</a>
+            <a href="/#testimonials">Testimonials</a>
+            <a href="/#faq">FAQ</a>
           </div>
           :
           <Hamburger onToggle={cycleOpen} color="white" />
       }
       {
         width > 750 ?
-          <Button variant='contained' className='navbar_dashboard_button'>Dashboard</Button>
+          <Button variant='contained' className='navbar_dashboard_button'>Login</Button>
           :
           undefined
       }
