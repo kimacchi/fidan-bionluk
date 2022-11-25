@@ -7,7 +7,6 @@ import Memberships from '../components/Memberships'
 import Quotes from '../components/Quotes'
 import Faq from '../components/Faq'
 import Footer from '../components/Footer'
-import {motion} from "framer-motion";
 
 const Main = () => {
   return (
